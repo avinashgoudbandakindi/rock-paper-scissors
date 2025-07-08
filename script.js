@@ -25,14 +25,14 @@ options.forEach((option) => {
 
                 //set player's choice image
                 const userChoice = option.innerHTML.toUpperCase();
-                player.src = "./images/" + userChoice.toLowerCase() + "Player.png";
+                player.src = "images/" + userChoice.toLowerCase() + "Player.png";
 
                 //Generate Computer's choice
                 const genCompChoice = () => {
                     const choices = ["ROCK", "PAPER", "SCISSORS"];
                     let randIdx = Math.floor(Math.random() * 3);
                     let compChoice = choices[randIdx];
-                    computer.src = "./images/" + compChoice.toLowerCase() + "Computer.png"
+                    computer.src = "images/" + compChoice.toLowerCase() + "Computer.png"
                     return compChoice;
                 };
 
